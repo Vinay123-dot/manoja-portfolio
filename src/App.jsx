@@ -23,14 +23,14 @@ export default function App() {
         <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
           {/* Image comes first on small screens, second on md+ */}
           <motion.div initial={{ x: 60, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="flex-1 flex justify-center order-1 md:order-2">
-            <img src={profileImage} alt="Vinay" className="rounded-lg shadow-xl w-92 h-92 object-cover border-4 border-orange-400" />
+            <img src={profileImage} alt="Manoja" className="rounded-lg shadow-xl w-92 h-92 object-cover border-4 border-orange-400" />
           </motion.div>
 
           {/* Text comes after image on mobile, before on md+ */}
           <motion.div initial={{ x: -60, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="flex-1 order-2 md:order-1">
             <p className="text-lg font-semibold text-orange-500 mb-2">Frontend Developer</p>
 
-            <h2 className="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Hi, I'm Vinay</h2>
+            <h2 className="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Hi, I'm Manoja</h2>
 
             <p className="text-gray-700 font-semibold text-base leading-relaxed text-lg mb-6 max-w-2xl">
               A front-end developer with <strong>4 years</strong> of experience building fast, responsive, and scalable web apps using <strong>React.js</strong> and{" "}
