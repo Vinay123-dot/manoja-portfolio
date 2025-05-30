@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.table-container {
+  max-height: 300px;
+  /* Set fixed height */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* Ensure table takes full width */
+}
+
+thead {
+  background-color: aquamarine;
+  position: sticky;
+  top: -5px;
+  /* Stick the header to the top */
+  z-index: 2;
+  /* Ensure it stays above other content */
+}
+
+tr,
+th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+}
